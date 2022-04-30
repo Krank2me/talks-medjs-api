@@ -3,6 +3,6 @@ const addTalk = require('../controllers/addTalk');
 
 const router = Router();
 
-router.post('/add', addTalk);
+router.post('/add', addTalk)
 
 module.exports = router;

@@ -1,32 +1,30 @@
-var Airtable = require('airtable');
 require("dotenv").config();
+const Airtable = require('airtable');
 const { API_KEY, BASE } = process.env;
+const emailer = require('./emailer')
 
 async function addTalk (req, res) {
   const {name, talk} = req.body;
-  const base = new Airtable({ apiKey: API_KEY }).base(BASE);
 
   try {
-    base('Charlas').create([
+    const base = new Airtable({ apiKey: API_KEY }).base(BASE);
+    base('Charlas').create(
       {
-        "fields": {
-          "Name": name,
-          "Talk": talk
-        }
+        "Name": name,
+        "Talk": talk
       }
-    ], function(err, records) {
+    , function(err, record) {
       if (err) {
         console.error(err);
         return;
       }
-      records.forEach(function (record) {
-        if (record.id) {
-          res.status(200).send({message: 'Talk added success', id: record.id});
-        } else {
-          res.status(500).send({message: 'an error ocurred while adding new talk'});
-        }
-        console.log(record.getId());
-      });
+      if (record.id) {
+        const bodyEmail = {name, talk};
+        emailer.sendMail(bodyEmail);
+        res.status(200).send({message: 'Talk added success', id: record.id});
+      } else {
+        res.status(500).send({message: 'an error ocurred while adding new talk'});
+      }
     });
   } catch (error) {
     res.status(500).send({erroMessage: 'server internal error'});
