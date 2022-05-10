@@ -8,7 +8,9 @@ async function addTalk(req, res) {
     fullName,
     email,
     userTwitter,
+    userCompany,
     talkTitle,
+    talkLevel,
     talkDescription,
     speakerDescription,
   } = req.body;
@@ -21,6 +23,8 @@ async function addTalk(req, res) {
         Email: email,
         Twitter: userTwitter,
         Talk: talkTitle,
+        Level: talkLevel,
+        Company: userCompany,
         Description: talkDescription,
         Role: speakerDescription,
       },
