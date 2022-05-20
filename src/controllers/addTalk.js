@@ -39,6 +39,8 @@ async function addTalk(req, res) {
             email,
             userTwitter,
             talkTitle,
+            talkLevel,
+            userCompany,
             talkDescription,
             speakerDescription,
           };
