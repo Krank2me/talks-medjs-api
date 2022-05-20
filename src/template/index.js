@@ -168,8 +168,8 @@ const htmlTemplate = (data) => {
           width: 100% !important;
         }
         .adapt-img {
-          width: 100% !important;
-          height: auto !important;
+          width: 30px !important;
+          height: 30px !important;
         }
         .es-m-p0 {
           padding: 0 !important;
@@ -415,142 +415,71 @@ const htmlTemplate = (data) => {
                       width: 600px;
                     "
                   >
-                    <tr>
-                      <td
-                        align="left"
-                        style="
-                          padding: 0;
-                          margin: 0;
-                          padding-top: 20px;
-                          padding-left: 20px;
-                          padding-right: 20px;
-                        "
-                      >
-
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          class="es-left"
-                          align="left"
-                          style="
-                            mso-table-lspace: 0pt;
-                            mso-table-rspace: 0pt;
-                            border-collapse: collapse;
-                            border-spacing: 0px;
-                            float: left;
-                          "
-                        >
-                          <tr>
-                            <td
-                              class="es-m-p0r"
-                              valign="top"
-                              align="center"
-                              style="padding: 0; margin: 0; width: 113px"
-                            >
-                              <table
-                                cellpadding="0"
-                                cellspacing="0"
-                                width="100%"
-                                role="presentation"
-                                style="
-                                  mso-table-lspace: 0pt;
-                                  mso-table-rspace: 0pt;
-                                  border-collapse: collapse;
-                                  border-spacing: 0px;
-                                "
-                              >
+                  <tr>
+                  <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td
+                            width="560"
+                            class="esd-container-frame"
+                            align="center"
+                            valign="top"
+                          >
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
+                                <tr>
+                                  <td align="center" class="esd-block-text">
+                                    <p style="font-size: 25px">
+                                      <strong>Nueva charla registrada&nbsp;</strong>
+                                    </p>
+                                  </td>
+                                </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="esd-structure es-p20t es-p20r es-p20l" align="left">
+                    <table cellpadding="0" cellspacing="0" width="100%">
+                      <tbody>
+                        <tr>
+                          <td
+                            width="560"
+                            class="esd-container-frame"
+                            align="center"
+                            valign="top"
+                          >
+                            <table cellpadding="0" cellspacing="0" width="100%">
+                              <tbody>
                                 <tr>
                                   <td
                                     align="center"
-                                    style="
-                                      padding: 0;
-                                      margin: 0;
-                                      font-size: 0px;
-                                    "
+                                    class="esd-block-image"
+                                    style="font-size: 0px"
                                   >
-                                    <img
-                                      class="adapt-img"
-                                      src="https://res.cloudinary.com/panda2me/image/upload/v1651547068/talks-medjs/Logo_MedellinJS_zziflu.svg"
-                                      alt
-                                      style="
-                                        display: block;
-                                        border: 0;
-                                        outline: none;
-                                        text-decoration: none;
-                                        -ms-interpolation-mode: bicubic;
-                                      "
-                                      width="113"
-                                    />
+                                    <a target="_blank">
+                                      <img
+                                        src="https://res.cloudinary.com/panda2me/image/upload/v1651547068/talks-medjs/Logo_MedellinJS_zziflu.svg"
+                                        alt
+                                        style="display: block"
+                                        width="290"
+                                      />
+                                    </a>
                                   </td>
                                 </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-
-                        <table
-                          cellpadding="0"
-                          cellspacing="0"
-                          align="right"
-                          style="
-                            mso-table-lspace: 0pt;
-                            mso-table-rspace: 0pt;
-                            border-collapse: collapse;
-                            border-spacing: 0px;
-                          "
-                        >
-                          <tr>
-                            <td
-                              align="left"
-                              style="padding: 0; margin: 0; width: 427px"
-                            >
-                              <table
-                                cellpadding="0"
-                                cellspacing="0"
-                                width="100%"
-                                role="presentation"
-                                style="
-                                  mso-table-lspace: 0pt;
-                                  mso-table-rspace: 0pt;
-                                  border-collapse: collapse;
-                                  border-spacing: 0px;
-                                "
-                              >
-                                <tr>
-                                  <td
-                                    align="center"
-                                    class="es-m-txt-c"
-                                    style="
-                                      padding: 0;
-                                      margin: 0;
-                                      padding-bottom: 10px;
-                                      padding-top: 20px;
-                                    "
-                                  >
-                                    <h1
-                                      style="
-                                        margin: 0;
-                                        line-height: 46px;
-                                        mso-line-height-rule: exactly;
-                                        font-family: arial, 'helvetica neue',
-                                          helvetica, sans-serif;
-                                        font-size: 46px;
-                                        font-style: normal;
-                                        font-weight: bold;
-                                        color: #333333;
-                                      "
-                                    >
-                                      Nueva charla registrada
-                                    </h1>
-                                  </td>
-                                </tr>
-                              </table>
-                            </td>
-                          </tr>
-                        </table>
-
-                      </td>
-                    </tr>
+                              </tbody>
+                            </table>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </td>
+                </tr>
                     <tr>
                       <td
                         align="left"
