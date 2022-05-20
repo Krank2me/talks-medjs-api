@@ -1,7 +1,4 @@
 const htmlTemplate = (data) => {
-  console.log("🚀 ~ file: index.js ~ line 2 ~ htmlTemplate ~ data", data);
-  const urlLogo =
-    "https://res.cloudinary.com/panda2me/image/upload/v1651547068/talks-medjs/Logo_MedellinJS_zziflu.svg";
   const html = `
   <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html
@@ -473,7 +470,7 @@ const htmlTemplate = (data) => {
                                   >
                                     <img
                                       class="adapt-img"
-                                      src=${urlLogo}
+                                      src="https://res.cloudinary.com/panda2me/image/upload/v1651547068/talks-medjs/Logo_MedellinJS_zziflu.svg"
                                       alt
                                       style="
                                         display: block;
